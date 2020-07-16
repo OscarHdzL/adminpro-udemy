@@ -7,13 +7,14 @@ import { LoginComponent } from './login/login.component';
 import { APP_ROUTES } from './app.routes';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
-import { IncrementadorComponent } from './components/incrementador/incrementador.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    //IncrementadorComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -4,8 +4,8 @@
     <span class="input-group-btn">
         <button class="btn btn-secondary" type="button" (click)="disminuir()"><i class="mdi mdi-minus"></i></button>
     </span>
-    <input type="number" max="100" min="0" class="form-control" [(ngModel)]="porcentaje" (ngModelChange)="onChanges($event)">
-    <span class="input-group-btn">
+    <input type="number" max="100" min="0" class="form-control" [ngClass]="{'is-invalid': porcentaje > 100 || porcentaje < 0}"  [(ngModel)]="porcentaje" (ngModelChange)="onChanges($event)" required>
+    <span class="input-group-btn">  
         <button class="btn btn-secondary" type="button" (click)="aumentar()"><i class="mdi mdi-plus"></i></button>
     </span>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ViewChild } from '@angular/core';
 import { FormsModule} from '@angular/forms'
 
 
@@ -9,6 +9,8 @@ import { FormsModule} from '@angular/forms'
   ]
 })
 export class IncrementadorComponent implements OnInit {
+
+//@ViewChild 
 
   @Input() leyenda: string = 'Leyenda';
   @Input() porcentaje: number = 50;
