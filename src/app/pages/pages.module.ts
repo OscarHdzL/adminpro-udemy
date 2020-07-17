@@ -10,6 +10,7 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 import { CommonModule } from '@angular/common';
 import { ChartsModule } from 'ng2-charts';
 import { DonaComponent } from '../components/dona/dona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -19,14 +20,16 @@ declarations: [
   ProgressComponent,
   Graficas1Component,
   IncrementadorComponent,
-  DonaComponent
+  DonaComponent,
+  AccountSettingsComponent
   
 
 ],
 exports: [
   DashboardComponent,
   ProgressComponent,
-  Graficas1Component
+  Graficas1Component,
+  AccountSettingsComponent
 ],
 imports: [
   SharedModule,
